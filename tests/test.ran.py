@@ -6,7 +6,7 @@ class TestScraper(unittest.TestCase):
         """
         Test the product scraping function with mock data.
         """
-        home_url = "https://mockurl.com/page="
+        home_url = "https://incidecoder.com/ingredients/niacinamide?uoffset="
         start_page = 1
         end_page = 1
         matches = ["skin", "eye", "face"]
