@@ -1,0 +1,50 @@
+# This is a web scraper for incidecoder website. This website has information on many products. When you click on a product name it'll show the description of the product, the ingredients it has and an explanation for most ingredients. I was inspired to create this tool to better filter out specific products in incidecoder because this website doesn't have an indepth filter tool.
+
+## Overview
+When you open the incidecoder webiste you can search for a keyword. The results are shown have many pages.
+
+## Prerequisites
+- Python 3.x
+- Google Chrome browser installed
+- ChromeDriver installed and in your PATH
+
+## Project Structure
+incidecoder/
+├── hair.py                 # Main script
+├── requirements.txt        # Dependencies
+├── README.md               # Instructions for usage
+└── tests/                  # Unit tests folder
+    └── test_ran.py         # Unit tests file
+
+## Installation
+
+1. Clone this repository:
+    ```sh
+    git clone https://github.com/harshitha-ras/incidecoder
+    cd incidecoder
+    ```
+
+2. Install the required Python packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Update the `home_url`, `matches`, `wash_matches`, and `cat` variables as per your needs in the script.
+
+2. Run the script:
+    ```sh
+    hair.py
+    ```
+
+3. The accepted products will be saved in `products.csv` and rejected products in `reject.csv`.
+
+## Running Unit Tests
+
+The project includes a unit test to validate the scraping functionality. Run the tests with:
+```sh
+python -m unittest discover tests
+
+
+
